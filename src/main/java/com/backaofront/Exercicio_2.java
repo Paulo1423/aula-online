@@ -20,10 +20,14 @@ public class Exercicio_2 {
         b = Double.parseDouble(JOptionPane.showInputDialog("Total de votos brancos: ")); // 234317 votos
         n = Double.parseDouble(JOptionPane.showInputDialog("Total de votos nulos: ")); // 430756 votos
 
-        // imprimo a mensagem com os valores em porcentagem
-        JOptionPane.showMessageDialog(null, "Validos: " + (v * 100) / votos + "%"); // 89,58%
-        JOptionPane.showMessageDialog(null, "Brancos: " + (b * 100) / votos + "%"); // 3,67%
-        JOptionPane.showMessageDialog(null, "Nulos: " + (n * 100) / votos + "%"); // 6,75%
+        // faço a formula de percentual de cada voto
+        validos = (v * 100) / votos;
+        brancos = (b * 100) / votos;
+        nulos = (n * 100) / votos;
 
+        // imprimo a mensagem com os valores em porcentagem
+        JOptionPane.showMessageDialog(null, String.format("Validos: %.2f%%", validos)); // 89,58%
+        JOptionPane.showMessageDialog(null, String.format("Brancos: %.2f%%",  brancos)); // 3,67%
+        JOptionPane.showMessageDialog(null, String.format("Nulos: %.2f%%", nulos)); // 6,75%
     }
-}  // tem como ficar melhor
+}
