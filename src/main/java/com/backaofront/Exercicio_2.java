@@ -29,5 +29,6 @@ public class Exercicio_2 {
         JOptionPane.showMessageDialog(null, String.format("Validos: %.2f%%", validos)); // 89,58%
         JOptionPane.showMessageDialog(null, String.format("Brancos: %.2f%%",  brancos)); // 3,67%
         JOptionPane.showMessageDialog(null, String.format("Nulos: %.2f%%", nulos)); // 6,75%
+        
     }
 }
