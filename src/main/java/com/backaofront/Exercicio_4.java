@@ -19,5 +19,6 @@ public class Exercicio_4 {
             }else {
                 System.out.println("Você não é maior de idade e não pode dirigir!!!");
             }
+            input.close();
         }
     }
